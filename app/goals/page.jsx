@@ -31,7 +31,7 @@ export default async function UsersPage() {
                 {goals.map((goal) => {
                   return (
                     <>
-                      <p key={goal.code} className="text-3xl mt-10">
+                      <div key={goal.code} className="text-3xl mt-10">
                         <Link href={`/goals/${goal.code}`}>
                           <Card
                             key={goal.code}
@@ -39,7 +39,7 @@ export default async function UsersPage() {
                             code={goal.code}
                           />
                         </Link>
-                      </p>
+                      </div>
                     </>
                   );
                 })}
